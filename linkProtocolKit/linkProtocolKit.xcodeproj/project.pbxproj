@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		457DD0A81C1432A30039F7B3 /* BIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0A71C1432A30039F7B3 /* BIWebViewController.m */; };
+		457DD0AB1C14404E0039F7B3 /* BIProgressLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 457DD0AA1C14404E0039F7B3 /* BIProgressLineView.m */; };
 		45A90EA11C009BB0006BBF99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A90EA01C009BB0006BBF99 /* main.m */; };
 		45A90EA41C009BB0006BBF99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A90EA31C009BB0006BBF99 /* AppDelegate.m */; };
 		45A90EA71C009BB0006BBF99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A90EA61C009BB0006BBF99 /* ViewController.m */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		457DD0A61C1432A30039F7B3 /* BIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIWebViewController.h; sourceTree = "<group>"; };
+		457DD0A71C1432A30039F7B3 /* BIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIWebViewController.m; sourceTree = "<group>"; };
+		457DD0A91C14404E0039F7B3 /* BIProgressLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIProgressLineView.h; sourceTree = "<group>"; };
+		457DD0AA1C14404E0039F7B3 /* BIProgressLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIProgressLineView.m; sourceTree = "<group>"; };
 		45A90E9C1C009BB0006BBF99 /* linkProtocolKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = linkProtocolKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45A90EA01C009BB0006BBF99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45A90EA21C009BB0006BBF99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +153,10 @@
 				45A90EE21C00C0A4006BBF99 /* BIlinkProtocol.h */,
 				45A90EE31C00C0A4006BBF99 /* NSString+BIURLParams.h */,
 				45A90EE41C00C0A4006BBF99 /* NSString+BIURLParams.m */,
+				457DD0A61C1432A30039F7B3 /* BIWebViewController.h */,
+				457DD0A71C1432A30039F7B3 /* BIWebViewController.m */,
+				457DD0A91C14404E0039F7B3 /* BIProgressLineView.h */,
+				457DD0AA1C14404E0039F7B3 /* BIProgressLineView.m */,
 				45A90EE51C00C0A4006BBF99 /* viewMap.plist */,
 			);
 			path = BIlinkProtocol;
@@ -277,7 +287,9 @@
 				45A90EEF1C00C0A4006BBF99 /* NSString+BIURLParams.m in Sources */,
 				45A90EF21C00C0A4006BBF99 /* StoryBoardViewController.m in Sources */,
 				45A90ECA1C009DB7006BBF99 /* README.md in Sources */,
+				457DD0AB1C14404E0039F7B3 /* BIProgressLineView.m in Sources */,
 				45A90EF11C00C0A4006BBF99 /* CodeViewController.m in Sources */,
+				457DD0A81C1432A30039F7B3 /* BIWebViewController.m in Sources */,
 				45A90EF31C00C0A4006BBF99 /* XibViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,6 +489,7 @@
 				45A90EDB1C00A185006BBF99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

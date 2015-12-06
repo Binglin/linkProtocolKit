@@ -21,10 +21,10 @@
     return [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:nil];
 }
 
-- (void)settingWithParameters:(NSDictionary *)parameters{
-    NSString *XIBText = parameters[@"text"];
-    self.xibString = XIBText;
-}
+//- (void)settingWithParameters:(NSDictionary *)parameters{
+//    NSString *XIBText = parameters[@"text"];
+//    self.xibString = XIBText;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -33,8 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="umq-gt-35M">
-                                <rect key="frame" x="175.5" y="255" width="249" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="umq-gt-35M">
+                                <rect key="frame" x="162" y="247" width="249" height="120"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-gh-RgX">
                                         <rect key="frame" x="0.0" y="0.0" width="217" height="30"/>
@@ -55,6 +55,13 @@
                                         <state key="normal" title="view controller load from storyboard"/>
                                         <connections>
                                             <action selector="storyboardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPB-hp-277"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMb-9Q-yP8">
+                                        <rect key="frame" x="0.0" y="90" width="152" height="30"/>
+                                        <state key="normal" title="web controller with url"/>
+                                        <connections>
+                                            <action selector="showWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfb-Cx-Ojr"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -96,6 +103,9 @@
                             <constraint firstItem="Kfg-3P-Ay3" firstAttribute="centerY" secondItem="hln-5f-bF4" secondAttribute="centerY" id="vjD-q1-Ue1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="Kfg-3P-Ay3" id="SGb-2q-H6z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVa-eZ-bQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,9 +1,11 @@
 
 # linkProtocolKit
+#通过ur方式跳转web或者app native页面
+
 
 ###jump to out of app
 
-http://www.xxx.com/appOut
+
 
 
 ###jump view controller in native app
@@ -21,13 +23,10 @@ http://www.xxx.com/code
 
 
 
-
-
-the following two code blocks act the same in the class ViewController 
-
+the following two code blocks act the same
 1.
 ```
-[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/code"];
+[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/app?appinner=app&pageName=code];
 ```
 
 2.
@@ -35,45 +34,45 @@ the following two code blocks act the same in the class ViewController
 CodeViewController *code =  [[CodeViewController alloc] init];
 code.view.backgroundColor = [UIColor lightGrayColor];
 [self.navigationController pushViewController:code animated:YES];
-*/
-[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/code"];
-}
+
 ```
 
 
 
-http://www.xxx.com/xib
-#####configuration a property in view controller
-* http://www.xxx.com/xib?text=你好
 
-the following two code blocks act the same in the class ViewController 
-
+the following two code blocks act the same
 1.
-```javascript
-[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/xib?text=abc"];
 ```
-
+[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/app?appinner=app&pageName=xib&text=abc"];
+```
 2.
-```javascript
+```
 XibViewController *xibViewController =  [[XibViewController alloc] initWithNibName:@"XibViewController" bundle:nil];
 xibViewController.xibString = @"abc";
 [self.navigationController pushViewController:xibViewController animated:YES];
 ```
 
 
-http://www.xxx.com/storyboard
 
-the following two code blocks act the same in the class ViewController 
 
-1.
-```javascript
-[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/storyboard"];
+/*
+the following two code blocks act the same
 ```
+[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/app?appinner=app&pageName=storyboard"];
 
-2.
-```javascript
 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
 StoryBoardViewController *storyBoardVC = [storyboard instantiateViewControllerWithIdentifier:@"storyboardViewController"];
 [self.navigationController pushViewController:storyBoardVC animated:YES];
+```
+```
+[[BIlinkHelper helper] openApplink:@"http://www.xxx.com/app?appinner=app&pageName=storyboard"];
+```
+
+
+
+
+app内部web跳转
+```
+http://www.xxx.com/?appinner=app&pageName=web&url=http%3A%2F%2Fwww.baidu.com 
 ```
 

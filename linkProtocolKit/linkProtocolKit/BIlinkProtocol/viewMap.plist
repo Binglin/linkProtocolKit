@@ -3,12 +3,50 @@
 <plist version="1.0">
 <dict>
 	<key>code</key>
-	<string>CodeViewController</string>
+	<dict>
+		<key>className</key>
+		<string>CodeViewController</string>
+		<key>supportproperty</key>
+		<string></string>
+		<key>description</key>
+		<string>code生成的代码测试</string>
+	</dict>
 	<key>xib</key>
-	<string>XibViewController</string>
+	<dict>
+		<key>className</key>
+		<string>XibViewController</string>
+		<key>description</key>
+		<string>xib生成界面例子</string>
+	</dict>
 	<key>storyboard</key>
-	<string>StoryBoardViewController</string>
-	<key>appOut</key>
-	<string></string>
+	<dict>
+		<key>className</key>
+		<string>StoryBoardViewController</string>
+		<key>description</key>
+		<string>storyboard生成页面</string>
+	</dict>
+	<key>web</key>
+	<dict>
+		<key>className</key>
+		<string>BIWebViewController</string>
+		<key>description</key>
+		<string>网页</string>
+		<key>properties</key>
+		<string>url</string>
+	</dict>
+	<key>Template</key>
+	<dict>
+		<key>className</key>
+		<string>NSStringOfViewControllerClass</string>
+		<key>properties</key>
+		<string>链接中的property，多个属性时使用,隔开. eg:id</string>
+		<key>propertiesMap</key>
+		<dict>
+			<key>id</key>
+			<string>pageId /*eg: url中属性字段为id，controller字段为pageId,可在本字段设置 propertiesMao字段非必需*/</string>
+		</dict>
+		<key>description</key>
+		<string>view controller简要说明</string>
+	</dict>
 </dict>
 </plist>

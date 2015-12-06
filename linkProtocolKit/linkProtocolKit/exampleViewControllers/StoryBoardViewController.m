@@ -11,6 +11,8 @@
 
 @interface StoryBoardViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+
 @end
 
 @implementation StoryBoardViewController
@@ -25,6 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.title = @"story board";
+    
+    self.textLabel.text = self.content;
 }
 
 @end

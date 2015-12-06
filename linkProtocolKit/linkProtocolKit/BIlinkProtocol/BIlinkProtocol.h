@@ -10,10 +10,14 @@
 
 @protocol BIlinkProtocol <NSObject>
 
+
+/*
+ * view controller maybe init from code 、xib、storyboard
+ * implement the function with their init
+ */
 + (__kindof UIViewController<BIlinkProtocol> *)initializeFromInterface;
 
 @optional
-- (BOOL)canLinkWithParameters:(NSDictionary *)parameters;
 - (void)settingWithParameters:(NSDictionary *)parameters;
 
 @end

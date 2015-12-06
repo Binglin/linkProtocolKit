@@ -11,4 +11,6 @@
 
 @interface StoryBoardViewController : UIViewController<BIlinkProtocol>
 
+@property (nonatomic, copy) NSString *content;
+
 @end

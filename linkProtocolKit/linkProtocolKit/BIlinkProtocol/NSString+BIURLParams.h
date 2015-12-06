@@ -17,7 +17,6 @@
 
 @interface NSDictionary (BIURLParamsCombine)
 
-- (NSString *)URLParamFormateString;
-- (NSString *)URLParamFormateStrings;
+- (NSString *)URLParamQueryString;
 
 @end
