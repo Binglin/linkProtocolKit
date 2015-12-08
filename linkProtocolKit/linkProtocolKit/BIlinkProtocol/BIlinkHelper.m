@@ -79,6 +79,10 @@
     return ([link rangeOfString:self.appInnerIdentifier].location != NSNotFound);
 }
 
++ (void)openApplink:(NSString *)link{
+    [[BIlinkHelper helper] openApplink:link];
+}
+
 - (void)openApplink:(NSString *)link{
     NSLog(@"app link = %@", link);
 
